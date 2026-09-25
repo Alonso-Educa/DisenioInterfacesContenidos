@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.media{
+    background-color: lightgray;
+    padding: 5.dp;
+}
+.media img {
+  display: flex;
+  float: left;
+  fit-picture {
+    width: min-content;
+  }
+  width: 50%;
+}
+.media span {
+    background-color: #DC2626;
+    color: #FFFFFF;
+    padding: 2.dp;
+    border-radius: 50.dp;
+    display: block;
+}
+
+h1{
+    color: #1F2937;
+}
+
+h3{
+    color: #4B5563;
+    stroke-width: 1.dp;
+}
+
+.precios h1{
+    color: #000000;
+    font-weight: bold;
+    background-color: lightgray;
+}
+.precios h3{
+    color: #4B5563;
+    font-style: oblique;
+}
+
+.stock{
+    color: green;
+}
+
+button{
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    padding: 2.dp;
+    border-radius: 50.dp;
+}
