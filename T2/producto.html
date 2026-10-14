@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tema 2: Práctica Diagnóstica Inicial</title>
+    <meta charset="UTF-8">
+</head>
+
+<!-- No se puede usar css en toda la práctica -->
+
+<body>
+    <!-- Incluye la marca/logo del sitio.
+■ Crea un menú de navegación con enlaces ficticios (Inicio, Catálogo,
+Ofertas, Contacto).
+■ Incorpora una zona de búsqueda global en el sitio. -->
+    <header>
+        <span>
+            <a href='/'><img
+                    src='https://png.pngtree.com/png-clipart/20190613/original/pngtree-logo-company-design-png-image_3588263.jpg'
+                    alt='Logo de la empresa' width="100px" height="100px"></a>
+            <nav>
+                <!-- No implementado porque no se mandan hacer esos apartados -->
+                <a href="#inicio">Inicio</a>
+                <a href="#projects">Catálogo</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <search>
+                <form>
+                    <input type="text" id="texto">
+                    <button id="buscar">Buscar</button>
+                </form>
+            </search>
+        </span>
+    </header>
+
+    <!-- Información General, Compra, Características Técnicas, Opiniones. -->
+    <section id="info">
+        <h1>Información General</h1>
+        <form>
+            <label for="cantidad">Cantidad:</label>
+            <input type="text" id="cantidad" name="cantidad" max="5" min="1"><br>
+            <label for="color">Color:</label>
+            <select id="color" name="color">
+                <option>Gris Espacial</option>
+                <option>Plata</option>
+                <option>Negro Mate</option>
+            </select><br>
+            <label for="fecha">Fecha preferente de entrega:</label>
+            <input id="fecha" name="fecha" type="date" value="2026-9-13"><br>
+            <label for="correo">Correo:</label>
+            <input id="correo" name="correo" type="text"><br>
+            <label for="instr">Instrucciones especiales de entrega:</label><br>
+            <textarea id="instr" name="instr" placeholder="Utilice este cuadro para escribir"
+                aria-describedby="instr"></textarea><br>
+            <button id="enviar">Enviar</button>
+        </form>
+    </section>
+
+    <section id="compra">
+        <h1>Productos</h1>
+        <img src='https://i.postimg.cc/tT8Ngj59/ubp15.jpg' alt='Foto de producto'>
+    </section>
+
+    <section id="caracteristicas">
+        <h1>Características</h1>
+    </section>
+
+    <section id="opiniones">
+        <h1 >Opiniones</h1>
+    </section>
+
+    <footer>
+        <h1>Preguntas frecuentes (FAQ):</h1>
+        <ul>
+            <li>1. ...</li>
+            <li>2. ...</li>
+            <li>3. ...</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
