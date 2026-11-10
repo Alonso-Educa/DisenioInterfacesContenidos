@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto Contraste UI — Caso NNormal (DIW)</title>
+  <link rel="stylesheet" href="style00.css">
+  <link rel="stylesheet" href="style01.css">
+</head>
+<body>
+
+  <!-- PANEL DE CONTROL DEL LABORATORIO (Permite pausar o fijar cada foto sin JS) -->
+  <header class="lab-toolbar" aria-label="Controles del escenario de pruebas">
+    <div class="lab-toolbar__info">
+      <strong>Banco de Pruebas UI (NNormal):</strong>
+      <span>Comprueba que el texto supere el ratio 4.5:1 (AA) en las 4 fotografías.</span>
+    </div>
+
+    <fieldset class="lab-controls">
+      <legend class="sr-only">Modo de visualización del fondo</legend>
+      
+      <label class="lab-control">
+        <input type="radio" name="bg-mode" value="auto" checked>
+        <span>Carrusel Auto (16s)</span>
+      </label>
+      <label class="lab-control">
+        <input type="radio" name="bg-mode" value="1">
+        <span>Foto 1 (Nieve/Luz alta)</span>
+      </label>
+      <label class="lab-control">
+        <input type="radio" name="bg-mode" value="2">
+        <span>Foto 2 (Cielo/Roca)</span>
+      </label>
+      <label class="lab-control">
+        <input type="radio" name="bg-mode" value="3">
+        <span>Foto 3 (Niebla/Contraluz)</span>
+      </label>
+      <label class="lab-control">
+        <input type="radio" name="bg-mode" value="4">
+        <span>Foto 4 (Mixta/Contraste)</span>
+      </label>
+    </fieldset>
+  </header>
+
+  <main>
+    <!-- COMPONENTE HERO BANNER A INTERVENIR POR EL ALUMNO -->
+    <section class="hero-banner" aria-labelledby="hero-title">
+      
+      <!-- Capas de fondo del carrusel CSS (4 fotografías reales de NNormal) -->
+      <div class="hero-banner__Carousel" aria-hidden="true">
+        <div class="hero-banner__slide slide-1"></div>
+        <div class="hero-banner__slide slide-2"></div>
+        <div class="hero-banner__slide slide-3"></div>
+        <div class="hero-banner__slide slide-4"></div>
+      </div>
+
+      <!-- Bloque de contenido textual (Actualmente con problemas graves de contraste) -->
+      <div class="hero-banner__content">
+        <p class="hero-banner__eyebrow"><span>Colección Otoño / Invierno</span></p>
+        
+        <h1 id="hero-title" class="hero-banner__title">
+          <span>Into the frozen ground.</span>
+        </h1>
+        
+        <p class="hero-banner__description">
+          <span>Equipamiento técnico de trail running y alta montaña .</span>
+        </p>
+        
+        <div class="hero-banner__actions">
+          <a href="#especificaciones" class="btn btn--outline">Ver especificaciones</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
