@@ -1,0 +1,57 @@
+html {
+    background-color: white;
+}
+
+body {
+    font-family: "Plaster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: white;
+    /* background: black;   background es lo mismo que background-image */
+    margin: 0;
+    height: 100vh;
+    background-color: #162e38;
+    background-image: url("https://i.postimg.cc/v8t9k8Cn/Anguria-1024x857.png"),
+        url("https://i.postimg.cc/BbpKKNxv/Ciliege-1024x794.webp"),
+        url("https://i.postimg.cc/PJywwKmx/platano4.png"),
+        url("https://i.ibb.co/PG4BBMGy/Pitahaya-roja-2-0008915-450.png"),
+        linear-gradient(336deg, rgba(22, 46, 56, 1) 0%, rgba(57, 9, 71, 1) 23%, rgba(43, 23, 87, 1) 56%, rgba(55, 50, 110, 1) 73%, rgba(158, 3, 109, 1) 100%);
+    background-repeat: no-repeat, repeat, repeat-x, repeat-y, no-repeat;
+    background-size: 50%, 5%, 10%, 30%, 100%;
+    background-position: center;
+}
+
+form {
+    font-family: verdana, arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+    padding: 1.5vw;
+    width: 50vw;
+    /* height: calc(35vw * 0.33); */
+    margin: 25vh auto;
+    border-radius: 10px 60px;
+    box-shadow: -5px 15px 30px peru;
+    /* Se puede poner 0 0 5px purple para destacar el borde solamente sin que se note tanto */
+}
+
+form input {
+    padding: 1ex;
+    padding-bottom: 0;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    border-bottom: 3px solid gray;
+    background-color: transparent;
+    width: 123px;
+}
+
+form p{
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(17px, 5vw, 45px);
+    margin: 0;
+}
